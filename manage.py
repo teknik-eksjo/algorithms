@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 import click
+import logging
 
 APP_FOLDER = 'exercises'
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 @click.group()
