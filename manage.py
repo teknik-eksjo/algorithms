@@ -2,10 +2,9 @@
 import click
 import logging
 
+APP_FOLDER = 'exercises'
 
 logging.basicConfig(level=logging.DEBUG)
-
-APP_FOLDER = 'exercises'
 
 
 @click.group()
