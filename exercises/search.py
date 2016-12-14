@@ -6,5 +6,5 @@ Fler alternativ finns beskrivna på Wikipedia_.
 """
 
 
-def binary():
+def binary(value, l):
     pass

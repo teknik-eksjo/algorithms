@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 import click
+import logging
+
+
+logging.basicConfig(level=logging.DEBUG)
 
 APP_FOLDER = 'exercises'
 
