@@ -7,4 +7,9 @@ Fler alternativ finns beskrivna på Wikipedia_.
 
 
 def insertion_sort(l):
-    return l
+            for n in range(1, len(l)):
+                d = n
+                while d > 0 and l[d] < l[d-1]:
+                    l[d], l[d-1] = l[d-1], l[d]
+                    d = d-1
+                return l
