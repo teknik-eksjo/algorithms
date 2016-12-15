@@ -12,7 +12,6 @@ def test_binary_search():
     assert binary_search([-21, -15, -3, 1, 3, 5], -15) == 1
     assert binary_search([0, 1, 2], 0) == 0
     assert binary_search([], 5) == -1
-    assert binary_search([1, 2, 3, 3, 4], 3) == 2
 
 def test_insertion_sort():
     """ tester av sorteringsalgoritmer """
