@@ -7,4 +7,6 @@ Fler alternativ finns beskrivna på Wikipedia_.
 
 
 def insertion_sort(l):
+    a = l
+    a.sort()
     return l
