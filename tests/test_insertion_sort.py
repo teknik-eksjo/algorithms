@@ -10,7 +10,6 @@ def test_binary_seatch():
     assert binary_search([-3, -1, 0, 1, 4], -1) == 1
     assert binary_search([1234, 2345, 3456, 4567, 5678, 6789], 1234) == 0
     assert binary_search([], 3) == -1
-    assert binary_search([1, 2, 4, 4, 4, 5], 2) == 1
 
 def test_insertion_sort():
     """test av sorterongsalgoritmer"""
