@@ -6,5 +6,15 @@ Fler alternativ finns beskrivna på Wikipedia_.
 """
 
 
-def binary():
-    pass
+def binary_sort(l, number):
+    first = 0
+    last = len(l) - 1
+    found = False
+
+    while first <= last:
+        middlenumber = (first + last)//2
+        if l[middlenumber] == number:
+            return middlenumber
+        else:
+                first = middlenumber + 1
+    return found
