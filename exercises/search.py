@@ -16,8 +16,5 @@ def binary_sort(l, number):
         if l[middlenumber] == number:
             return middlenumber
         else:
-            if number <= l[middlenumber]:
-                last = middlenumber - 1
-            if number >= l[middlenumber]:
                 first = middlenumber + 1
     return found
