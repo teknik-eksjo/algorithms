@@ -8,6 +8,6 @@ before_script:
 script:
   - ./manage.py lint
   - coverage run --source exercises ./manage.py test
-  - coverage report --fail-under 100
+  - coverage report
 notifications:
 email: false
