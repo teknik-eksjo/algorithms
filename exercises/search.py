@@ -23,10 +23,6 @@ def binary_search(a, number):
         if a[middlenumber] == number:
             return middlenumber
         else:
-            if number <= a[middlenumber]:
-                logger.debug('Moving upper limit to pivot.')
-                last_number = middlenumber - 1
-            if number >= a[middlenumber]:
                 logger.debug('Moving lower limit to pivot.')
                 first_number = middlenumber + 1
     return False

@@ -6,6 +6,7 @@ def test_binary_sort():
     assert binary_search(a, 8) == 4
     assert binary_search(a, 3) == 2
     assert binary_search(a, 1) == 1
+
     assert binary_search(a, 1) == 0
     assert binary_search(a, 55) == False
 
