@@ -2,6 +2,7 @@ import pytest
 from exercises.sort import insertion_sort
 
 
+@pytest.mark.skip('Not implemented yet.')
 @pytest.mark.parametrize('problem,expected_answer', [
     ([3, 2, 4, 1], [1, 2, 3, 4]),
     ([5, 7, 4, 8, 1, 2, 6, 3], [1, 2, 3, 4, 5, 6, 7, 8]),
