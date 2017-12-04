@@ -2,7 +2,7 @@ import pytest
 from exercises.search import linear_search, binary_search
 
 
-@pytest.mark.skip('Not implemented yet.')
+
 def test_linear_search():
     assert linear_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 4) == 3
     assert linear_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 1) == 0
@@ -18,7 +18,7 @@ def test_linear_search():
         linear_search([], 7)
 
 
-@pytest.mark.skip('Not implemented yet.')
+
 def test_binary_search():
     assert binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 4) == 3
     assert binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 1) == 0

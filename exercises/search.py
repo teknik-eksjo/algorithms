@@ -14,7 +14,10 @@ def linear_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Linear_search#Basic_algorithm
     """
-    pass
+    for i in range(0,len(l)):
+        if l[i] == v:
+            return i
+    raise ValueError
 
 
 def binary_search(l, v):
@@ -29,4 +32,24 @@ def binary_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Binary_search_algorithm#Algorith
     """
-    pass
+    #if len(l)==0 or (len(l))==1 and (l[0]!=v):
+    #    raise ValueError
+
+    #mid=l[len(l)//2]
+
+    #if v==mid: return v
+    #if v<mid: return binary_search(l[:len(l)//2], v)
+    #if v>mid: return binary_search(l[len(l)//2+1:], v)
+    low = 0
+    high = len(l)-1
+
+
+    while low <= high:
+        mid = (low + high) // 2
+        if l[mid] == v:
+            return mid
+        elif v < l[mid]:
+            high = mid - 1
+        else:
+            low = mid + 1
+    raise ValueError
