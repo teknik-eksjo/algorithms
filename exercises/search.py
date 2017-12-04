@@ -14,8 +14,10 @@ def linear_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Linear_search#Basic_algorithm
     """
-    pass
-
+    for i in range(0, len(l)):
+        if l(i) == v:
+            return i
+    raise ValueError
 
 def binary_search(l, v):
     """Implementation av binary search.
