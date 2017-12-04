@@ -1,5 +1,5 @@
 import pytest
-from exercises.sort import insertion_sort
+from exercises.sort import bubble_sort, insertion_sort, selection_sort, merge_sort
 
 
 @pytest.mark.skip('Not implemented yet.')
@@ -11,7 +11,7 @@ from exercises.sort import insertion_sort
     ([3, 4, 4, 2, 3, 2, 2], [2, 2, 2, 3, 3, 4, 4])
 ])
 def test_bubble_sort(problem, expected_answer):
-    assert insertion_sort(problem) == expected_answer
+    assert bubble_sort(problem) == expected_answer
 
 
 @pytest.mark.skip('Not implemented yet.')
@@ -35,7 +35,7 @@ def test_insertion_sort(problem, expected_answer):
     ([3, 4, 4, 2, 3, 2, 2], [2, 2, 2, 3, 3, 4, 4])
 ])
 def test_selection_sort(problem, expected_answer):
-    assert insertion_sort(problem) == expected_answer
+    assert selection_sort(problem) == expected_answer
 
 
 @pytest.mark.skip('Not implemented yet.')
@@ -47,4 +47,4 @@ def test_selection_sort(problem, expected_answer):
     ([3, 4, 4, 2, 3, 2, 2], [2, 2, 2, 3, 3, 4, 4])
 ])
 def test_merge_sort(problem, expected_answer):
-    assert insertion_sort(problem) == expected_answer
+    assert merge_sort(problem) == expected_answer
