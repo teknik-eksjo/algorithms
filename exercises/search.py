@@ -1,5 +1,4 @@
-"""Övningar på sökalgoritmer.
-"""
+"""Övningar på sökalgoritmer."""
 
 
 def linear_search(l, v):
@@ -14,8 +13,14 @@ def linear_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Linear_search#Basic_algorithm
     """
-    pass
+    found = False
+    for i in range(len(l)):
+        if(l[i] == v):
+            found = True
+            return i
 
+    if(found == False):
+        raise ValueError
 
 def binary_search(l, v):
     """Implementation av binary search.
@@ -28,5 +33,6 @@ def binary_search(l, v):
     `ValueError` kastas.
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Binary_search_algorithm#Algorith
+    if tl[c] == v:
     """
     pass
