@@ -14,6 +14,9 @@ def bubble_sort(l):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms
     """
+    if l[0] > l[1]:
+        temp = l[0]
+        l[0] = l[1]
     return l
 
 
