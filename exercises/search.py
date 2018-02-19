@@ -43,4 +43,4 @@ def binary_search(l, v):
             high = mid - 1
         else:
             low = mid + 1
-    raise ValueError 
+    raise ValueError
