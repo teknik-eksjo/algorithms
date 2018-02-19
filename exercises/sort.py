@@ -14,6 +14,12 @@ def bubble_sort(l):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms
     """
+    for passnum in range(len(l)-1,0,-1):
+        for i in range(passnum):
+            if l[i]>l[i+1]:
+                temp = l[i]
+                l[i] = l[i+1]
+                l[i+1] = temp
     return l
 
 
