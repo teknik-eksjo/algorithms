@@ -14,7 +14,14 @@ def linear_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Linear_search#Basic_algorithm
     """
-    pass
+    plats= 0
+    for nummer in l:
+        if nummer == v:
+            return plats
+        else:
+            plats +=1
+    else:
+        raise ValueError
 
 
 def binary_search(l, v):
@@ -29,4 +36,19 @@ def binary_search(l, v):
 
     .. _Wikipedia: https://en.wikipedia.org/wiki/Binary_search_algorithm#Algorith
     """
-    pass
+
+"""    nedre_plats = 0
+    övre_plats = len(l)-1
+    for nummer in l:
+        if (nedre_plats + övre_plats)/2==0:
+
+
+        else:
+            if l[övre_plats/2]>v:
+                nedre_plats = övre_plats/2
+            else:
+                övre_plats = övre_plats/2
+
+    return
+
+        else:"""
